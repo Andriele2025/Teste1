@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site com Fundo Fixo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      height: 100%;
+      background-image: url('URL-DA-SUA-IMAGEM.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* <-- Isso deixa o fundo parado */
+      color: white;
+    }
+
+    .conteudo {
+      padding: 100px 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* fundo escuro semi-transparente para o texto */
+      min-height: 200vh; /* Faz o site ter altura suficiente pra rolar */
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="conteudo">
+    <h1>Bem-vindo ao meu site</h1>
+    <p>Este site tem uma imagem de fundo fixa e conteúdo que sobe ao rolar.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec diam nec justo tincidunt volutpat. Integer euismod turpis id facilisis porttitor.</p>
+    <p>Continue rolando para ver o efeito da imagem de fundo fixa.</p>
+    <p style="margin-top: 800px;">Fim do conteúdo :)</p>
+  </div>
+</body>
+</html>
